@@ -1,0 +1,28 @@
+	Setup Tailwind CSS
+
+
+Step 1 : Run the following commands
+	npm install -D tailwindcss
+	npx tailwindcss init
+
+step 2: Update tailwind.conf.js file to include this line
+	  content: ["./dist/*.html"],
+
+step 3: Create src/input.css to include
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+step 4: Include the src/style.css file to your index.html
+	<link href="./style.css" rel="stylesheet">
+
+step 3 : command -
+	npx tailwind -i./src/input.css -o ./dist/style.css
+
+step 4 : command -
+	npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+step 5: Run the following command:
+	npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+step 6 : install "Tailwind CSS IntelliSense" extension
